@@ -48,12 +48,13 @@ pub contract CryptoPoops: NonFungibleToken {
       return (&self.ownedNFTs[id] as auth &NonFungibleToken.NFT?)!
     }
     
-    pub fun borrowAuthNFT(id: UInt64): &NFT {
+    // New function to borrow and authenticate access to NFT metadata
+  pub fun borrowAuthNFT(id: UInt64): &NFT {
     let nft = (&self.ownedNFTs[id] as auth &NonFungibleToken.NFT?) ?? panic("The NFT specified doesn't exist")
 
     // Use the optional chaining operator to handle the case when nftReference is nil
     return nft as! &NFT
-   }
+  }
 
     init() {
       self.ownedNFTs <- {}
