@@ -48,7 +48,9 @@ https://play.flow.com/060e1d04-1ac3-4cd1-8dc5-eba2ad218746?type=tx&id=32cb6b78-2
 recipient = 0x06
 
 name: (Enter Your Name)
+
 favouritefood: (Enter your favourite food)
+
 luckynumber: (Enter your lucky number)
 
 5. Execute the script1 with the following parameters:
