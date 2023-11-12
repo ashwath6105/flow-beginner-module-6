@@ -54,6 +54,7 @@ luckynumber: (Enter your lucky number)
 5. Execute the script1 with the following parameters:
 
 User = 0x06
+
 id = 1
 
 ## Authors
